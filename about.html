@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Jeremiah Wernham">
+		<meta name="keywords" content="Jeremiah Wernham, Software Engineering (Co-op) student, University of Guelph">
+		<meta name="author" content="Jeremiah Wernham">
+		<title>Job Description | Co-op Workterm Report</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<div id="page-container">
+			<div id="content-wrap">
+				<header>
+					<div class="container">
+						<div id="branding">
+							<h1><span class="highlight">Co-op </span>Workterm Report</h1>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class ="current"><a href="about.html">About</a></li>
+								<li><a href="goals.html">Goals</a></li>
+								<li><a href="conclusion.html">Conclusion</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+
+				<section id="divider">
+						<div class="container">
+							<div id="name">
+								<h4>Jeremiah Wernham | Software Engineering (CO-OP)</h4>
+							</div>
+							<div id="contact">
+								<h4>jwernham@uoguelph.ca</h4>
+							</div>
+						</div>
+				</section>
+
+		        <section id="main">
+		            <div class="container">
+		                <article id="main-col">
+		                	<h1 class="page-title">Job Description</h1>
+		                	<p>It is the responsibility of the DevOps team at Camis to take into account client reservation windows and customer rush times make provisions to the computational power of dedicated web applications, load balancers, databases, and virtual machines so that interaction with the Camis software system remains unimpeded. This is achieved by the analysis, benchmarking, and testing of each component under expected or actual loads on the system by the quality assurance team, which is then communicated to DevOps to ensure the required cloud computing service plan will be applied using Azure. It is the goal of the DevOps Engineer the ensure that the system can meet the demands of clients and customers, preferably though automated processes, at the best cost efficiency for the company. </p>
+							<p>To ensure the maximum possible uptime for the Camis 5 application, the DevOps team follows the agile software development approach in creating and maintaining continuous delivery pipelines. A continuous delivery pipeline is a set of steps code changes will follow programmatically to make their way to production. Automated builds, tests, and deployments are orchestrated as one release workflow, and contribute to the next iterative release of the Camis platform. Technologies used to accomplish this include Bitbucket, to track changes to the code base following the Git branching model workflow, Jenkins, to help spread the building and testing of new code changes over multiple service workers, or virtual machines, and Octopus Deploy, to manage releases and automate deployments to production. </p>
+							<p>A time where I was able to use benchmark testing and a systems thinking approach to the continuous deployment pipeline was for a task that would eliminate an unnecessary unpackaging step within the testing phase of the web application. I was to modify the main existing product pipeline to run end-to-end tests for the client website on a Jenkins build agent before packaging and deployment rather than afterward when the website is unpacked again and hosted through Azure. This was to theoretically save time on the deployment as it would not be packaged first and then unpackaged for the required test suite to run. By eliminating some time on each of the end-to-end test build that Jenkins encountered, the deployment time was decreased as found by the benchmark testing</p>
+							<p>Following some of the prevalent methodologies known as change control and continuous delivery in DevOps, lean management is another core tool used heavily at Camis. The lean management methodology focuses on small, iterative batches of work, and establishing feedback loops, and visualizations. Camis implements a Kanban board to visually organize existing JIRA tickets at various stages including backlog, in-progress, and review. This lets DevOps team members establish a lean workflow and quickly shift attention between multiple tickets in a single day. Feedback loops are amplified back though the continuous delivery pipeline to provide fast and detailed explanations as to what went wrong for developers to quickly resolve bugs in their code before it reaches production. This is mainly done through automated PowerShell processes created by DevOps to save time and provide transparency for other teams by posting feedback directly on the JIRA ticket.</p>
+							<p>Splunk Cloud is a cloud-based service and log management tool for ingesting machine data for the creation of automated reports, alerts, and dashboard visualizations. By ingesting Azure SQL, and web application IIS logs, and using the Splunk Search Language, I created multiple reports, alerts, and dashboards for the IT Systems team to monitor web traffic and database queries to easily visualize suspicious activity on the website or possible SQL injection attacks. By graphing the most out-of-date versions for each web browser per IP address in the past 6 months on client websites, I could quickly provide the information requested by the IT Systems team, bridging the gap between Dev and Ops.
+		                </article>
+
+		                <aside id="sidebar">
+		                	<div class="dark">
+		                		<h4>Soft Skills</h4>
+		            				<p>Communicated advanced technical details to differing team members and applied constructive feedback to formulate the most efficient solutions to assigned tasks.</p>
+		            				<p>Applied close attention to detail to ensure code base, naming conventions, and commit descriptions continually met company defined standards.</p>
+		            				<p>Demonstrated excellent adaptability and growth mindset when tasked with learning new technologies with little to no previous experience.</p> 
+								<br/><h4>Technical Skills</h4>
+		            				<p>Maintained company cloud computing infrastructure over peak reservation times to ensure smooth website and application operations.</p>
+		            				<p>Developed and testing and deployment pipelines to ensure code quality and maximize application uptime using PowerShell, Octopus, and Jenkins.</p>
+		            				<p>Administered company-wide machine data and security logs for the creation of alerts, interactive dashboards, and reports in Splunk Cloud.</p>
+		                	</div>
+		                </aside>
+		            </div>
+		        </section>
+		    </div>
+	        <footer>
+	        	<p>Jeremiah Wernham 2020</p></p>
+	        </footer>
+	    </div>
+	</body>
+
+</html>
